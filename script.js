@@ -9,6 +9,8 @@ toggle.addEventListener("click", () => {
 // FORM VALIDATION
 const form = document.getElementById("bookingForm");
 const message = document.getElementById("message");
+const modal = document.getElementById("bookingModal");
+const closeBtn = document.querySelector(".close");
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
@@ -21,8 +23,20 @@ form.addEventListener("submit", function(e) {
         message.textContent = "Please fill all required fields.";
         message.style.color = "red";
     } else {
-        message.textContent = "Booking submitted successfully!";
-        message.style.color = "lightgreen";
+        message.textContent = ""; // Clear any previous error message
+        modal.style.display = "block";
         form.reset();
+    }
+});
+
+// Close modal when clicking the close button
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
     }
 });

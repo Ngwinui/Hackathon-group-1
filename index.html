@@ -1,111 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoldenStay Hotel</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<!-- NAVBAR -->
-<header>
-    <nav class="navbar">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
         <h1 class="logo">GoldenStay</h1>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#rooms">Rooms</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#booking">Book</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#booking">Book</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu-toggle">☰</div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <h2>Experience Luxury & Comfort</h2>
-    <p>Your perfect stay starts here</p>
-    <a href="#booking" class="btn">Book Now</a>
-</section>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <h2>Experience Luxury & Comfort</h2>
+      <p>Your perfect stay experience starts here</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </section>
 
-<section id="rooms" class="rooms">
-    <h2>Our Rooms</h2>
+    <section id="rooms" class="rooms">
+      <h2>Our Rooms</h2>
 
-    <div class="room-container">
-
-        <!-- ROOM 1 -->
+      <div class="room-container">
+        <!-- STANDARD ROOM  -->
         <div class="room-card">
-            <img src="hotelRoom.jpg" alt="Standard Room">
-            <div class="room-content">
-                <h3>Standard Room</h3>
-                <p>Perfect for a cozy and affordable stay with essential comfort.</p>
-                <span>15,000 FCFA / night</span>
-                <a href="#booking" class="btn-small">Book Now</a>
-            </div>
+          <img src="hotelRoom.jpg" alt="Standard Room" />
+          <div class="room-content">
+            <h3>Standard Room</h3>
+            <p>
+              Simply Smart The perfect blend of cozy and cost-effective. Enjoy a
+              comfortable, high-quality stay at an affordable price with all the
+              essentials and none of the fuss.
+            </p>
+            <span>15,000 FCFA / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
         </div>
 
-        <!-- ROOM 2 -->
+        <!-- DELUXE ROOM -->
         <div class="room-card">
-            <img src="hotelRoom.jpg" alt="Deluxe Room">
-            <div class="room-content">
-                <h3>Deluxe Room</h3>
-                <p>Spacious and elegant with premium comfort and modern design.</p>
-                <span>90,000 FCFA / night</span>
-                <a href="#booking" class="btn-small">Book Now</a>
-            </div>
+          <img src="deluxe room.jpg.jpeg" alt="Deluxe Room" />
+          <div class="room-content">
+            <h3>Deluxe Room</h3>
+            <p>
+              Your Scenic Sanctuary Upgrade your stay with breathtaking views
+              and extra space. Curated for leisure seekers who want
+              sophisticated style and a touch of indulgence.
+            </p>
+            <span>90,000 FCFA / night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
         </div>
 
-        <!-- ROOM 3 -->
+        <!-- EXECUTIVE SUITE -->
         <div class="room-card">
-            <img src="hotelRoom.jpg" alt="Suite">
-            <div class="room-content">
-                <h3>Executive Suite</h3>
-                <p>Luxury experience with top-tier amenities and breathtaking style.</p>
-                <span>150,000 FCFA/ night</span>
-                <a href="#booking" class="btn-small">Book Now</a>
-            </div>
+          <img src="executive suite.jpg.jpeg" alt="Suite" />
+          <div class="room-content">
+            <h3>Executive Suite</h3>
+            <p>
+              Elevate Your Hustle The ultimate power-move. Separate living and
+              work spaces designed for high-performance productivity and premium
+              relaxation. Includes exclusive lounge access.
+            </p>
+            <span>150,000 FCFA/ night</span>
+            <a href="#booking" class="btn-small">Book Now</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        GoldenStay Hotel offers world class hospitality, elegance and comfort to
+        give you the perfect stay experience in over Three different African
+        Countries. It is home away from Home😊
+      </p>
+    </section>
+    <!-- LOCATIONS -->
+    <section id="location" class="location">
+      <h2>LOCATIONS</h2>
+      <p>
+        GoldenStay Hotel has branches in
+        <br />
+        CAMEROON - NAMIBIA - SOUTH AFRICA
+      </p>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-    <h2>About Us</h2>
-    <p>GoldenStay Hotel offers world class hospitality, elegance and comfort to give you the perfect stay experience. It is home away from Home😊</p>
-</section>
+    <!-- BOOKING -->
+    <section id="booking" class="booking">
+      <h2>Book Your Stay</h2>
 
-<!-- BOOKING -->
-<section id="booking" class="booking">
-    <h2>Book Your Stay</h2>
-
-    <form id="bookingForm">
-        <input type="text" placeholder="Full Name" id="name" required>
-        <input type="email" placeholder="Email" id="email" required>
-        <input type="date" id="checkin" required>
-        <input type="date" id="checkout" required>
+      <form id="bookingForm">
+        <input type="text" placeholder="Full Name" id="name" required />
+        <input type="email" placeholder="Email" id="email" required />
+        <input type="date" id="checkin" placeholder="Check-in Date" required />
+        <input type="date" id="checkout" required />
 
         <select id="room">
-            <option>Standard Room</option>
-            <option>Deluxe Room</option>
-            <option>Suite</option>
+          <option>Standard Room</option>
+          <option>Deluxe Room</option>
+          <option>Suite</option>
         </select>
 
-        <button type="submit">Submit</button>
-    </form>
+        <button type="submit">BOOK</button>
+      </form>
 
-    <p id="message"></p>
-</section>
+      <p id="message"></p>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: goldenstay@gmail.com</p>
-    <p>Phone: +237 000 000</p>
-</section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>
+        ✉️ Email: <a href="mailto:goldenstay@gmail.com">goldenstay@gmail.com</a>
+      </p>
+      <p>☎️ Phone: <a href="tel:+237000000">+237 000 000</a></p>
+    </section>
 
-<script src="script.js"></script>
-</body>
+    <!-- MODAL -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-icon">✓</div>
+        <h3>Booking Confirmed!</h3>
+        <p>You have successfully booked a room with GoldenStay.</p>
+        <p>May your experience be golden!</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
